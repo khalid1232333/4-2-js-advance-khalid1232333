@@ -100,7 +100,8 @@ Task:
 1) Declare an array with 10 numbers (any values).
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
-*/
+*/const nums = [12, 5, 99, -3, 47, 18, 0, 64, 23, 7];
+console.log("MIN:", Math.min(...nums), "MAX:", Math.max(...nums));
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
