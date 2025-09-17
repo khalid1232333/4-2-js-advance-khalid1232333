@@ -112,7 +112,15 @@ Task:
 2) Intentionally pass an empty array to trigger an error.
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
-*/
+*/function maxNonEmpty(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) throw new Error("Array must be non-empty");
+  return arr.reduce((a, b) => (a > b ? a : b));
+}
+try { console.log(maxNonEmpty([])); }
+catch (e) { console.log("Caught:", e.message); }
+finally { console.log("Finally block executed"); }
+
+
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
