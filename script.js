@@ -89,7 +89,8 @@ Task:
 1) Create a Date for the current moment (new Date()).
 2) Find and display the current day of month, month (0–11), and year.
 //    (Hint: getDate(), getMonth(), getFullYear() )
-*/
+*/const now = new Date();
+console.log(now.getDate(), now.getMonth(), now.getFullYear());
 
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
