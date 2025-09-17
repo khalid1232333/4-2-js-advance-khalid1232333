@@ -79,7 +79,7 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
-const str = "JavaScriptt";
+const str = "JavaScriptst";
 console.log(str.charAt(0), str.charAt(4), str.length);
 // ===================================
 // TODO-4: DATE — day, month, and year
