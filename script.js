@@ -68,7 +68,8 @@ console.log("After invalid update GPA:", student.gpa);
 Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
-*/
+*/const courses = { CS101: "Intro to Computer Science", MATH201: "Calculus II", PHY110: "Physics Lab" };
+for (const code in courses) if (Object.prototype.hasOwnProperty.call(courses, code)) console.log(code, "→", courses[code]);
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
